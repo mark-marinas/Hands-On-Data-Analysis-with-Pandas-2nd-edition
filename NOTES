@@ -1,0 +1,47 @@
+Descriptive statistics can be summarized in 2 ways
+1. Central Tendency - where is the concentation of the data.
+    mean - population mean and sample mean.
+        sensitive to outliers.
+    median - value at the center of the sample, not sensitive to outliers.
+    mode - most common value in the sample, useful for categorial data.
+2. Spread/Dispersion - how far apart the data are.
+    range - max(sample) - min(sample)
+        sensitive to outliers. not descriptive to show how the samples relate to the centroid.
+    mean-based
+        variance
+            average squared distance from the mean. sigma squared is the population variance, s^2 is the sample variance.
+            when calculating for the s^2, use n-1 as the divisor (bessel's correction).
+        standard deviation
+            square root of variance.
+        coefficien of variance  - CV
+            compare dispersion of one data set to another
+    median based
+        IQR - Inter Quantile Range 
+            IQR = Q3-Q1, measure of data concentration around the median
+        Quartile Coeffient of Dispersion    
+            similar to CV
+
+Histogram
+    for discrete data set 
+KDE - Kernel Density Estimates 
+    for continous data set 
+    estimate of PDF (Probability Density Function)
+CDF - Cumulative Density Function
+    P(X <= x) 
+
+Distribution Types
+
+Gaussian/Normal
+    - if mean=0 and sd=1, its standard normal (Z) Distribution
+Poisson
+    - discrete distribution, use to model arrivals
+    Exponential
+        - time between arrivals
+    both defined by their mean, lambda.
+Uniform
+    -equal Probability on each value within its bounds.
+    bernoulli trial - generate random number to simulate a pass/fail. When run multiple times, it becomes binomial.
+
+Normalization
+min-max - range of 0-1
+z-score - value refers to standard deviation from the mean. For example, a zscore of -0.5 mean its 0.5SD below the mean.
