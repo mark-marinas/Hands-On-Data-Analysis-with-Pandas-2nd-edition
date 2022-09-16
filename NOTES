@@ -13,7 +13,7 @@ Descriptive statistics can be summarized in 2 ways
             when calculating for the s^2, use n-1 as the divisor (bessel's correction).
         standard deviation
             square root of variance.
-        coefficien of variance  - CV
+        coefficient of variance  - CV
             compare dispersion of one data set to another
     median based
         IQR - Inter Quantile Range 
@@ -45,3 +45,35 @@ Uniform
 Normalization
 min-max - range of 0-1
 z-score - value refers to standard deviation from the mean. For example, a zscore of -0.5 mean its 0.5SD below the mean.
+
+Covariance
+    relationship between variables - how one variable changes with the other variable.
+    E[X] - expectation of X or Expected value of X. 
+        weighted average of all possible values, weighted by the probabily of occurence.
+        Sum(possible value * probability of the possible value) 
+Pearson-Correlation
+    r^2 could be misleading. It might a strong correlation, but it could be logarithmmic, or exponential, or intermediatary, or just coincidence.
+    !!!Plot and visually inspect data.
+Time-Series
+    predicting future values base on past values.
+    before modelling a time series, it has to be decomposed into its component - trend, seasonal, cyclical(noise)
+    most common methods used AR(auto regressive) I(integrated) MA(moving average)
+    Auto regressive 
+        value at t1 is correlated to value at t0.
+    Integrated  
+        concerned with delta between t1 and t0.
+    Moving average
+        average of a sliding window. All previous values have equal weight. To add more weight to recent data, use exponential averaging.  
+
+Confidence Level
+    The probability that the value will fall between the limits(upper/lower bound) of the confidence interval. Most common value used is 95%.
+    The higher the confidence level, the wider the confidence interval.
+Confidence interval
+    CI = mean +/-  z-statistic*(std. dev/sqrt(n))
+    z-statistic, or alpha-value, commonly used is 5%
+Hypothesis testing
+    Significance level = 1-Confidence Level
+    Test whether a certain population parameter is gt/lt/ne at a certain significance level
+    Ho (null hypthesis) - accepted value. 
+    H1 (alternate hypthesis) 
+    To reject the Ho means the accepted value is not true, and H1 is true. 
